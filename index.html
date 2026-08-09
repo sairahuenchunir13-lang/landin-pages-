@@ -2,23 +2,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estética Ilia — Alisados, Pestañas y Cejas en Bahía Blanca</title>
+<meta name="description" content="Estética Ilia: alisados, extensiones de pestañas y diseño de cejas en Bahía Blanca. Reservá tu turno por WhatsApp.">
+<link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-<title>landing pages</title>
-<header>logo</header>
-<header>link 1</header>
-<header>link 2</header>
-<h1>peluqueria ilia</h1>
-<p>servicio de peluquería </p>
-<button>ver mas</button>
-<!=============seccion de servicios=================>
-<section class="services">
-    <h2>nuestros servicios</h2>
-    <p>ofrecemos una amplia gama de servicios de peluquería para todos los gustos.</p>
+<!-- 1. HEADER -->
+<header id="site-header">
+  <a href="#inicio" class="logo">
+    <img src="assets/img/logo.png" alt="Estética Ilia">
+  </a>
+  <button id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="site-nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- 2. HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-arcs" aria-hidden="true">
+    <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMax slice">
+      <path d="M0 380 C 150 200, 650 200, 800 380" class="arc arc-1"/>
+      <path d="M-50 400 C 150 140, 650 140, 850 400" class="arc arc-2"/>
+      <path d="M-100 400 C 150 60, 650 60, 900 400" class="arc arc-3"/>
+    </svg>
+  </div>
+  <div class="hero-content">
+    <p class="eyebrow">Bahía Blanca</p>
+    <h1>Realzamos tu<br>belleza natural</h1>
+    <p class="hero-sub">Alisados, extensiones de pestañas y diseño de cejas, hechos con técnica, tiempo y dedicación.</p>
+    <a href="https://wa.me/549291XXXXXXX" target="_blank" class="btn btn-primary">Reservar por WhatsApp</a>
+  </div>
+  <a href="#servicios" class="scroll-cue" aria-label="Ir a servicios"><span></span></a>
 </section>
-<section class="services">
-    <h2>alisados</h2>
-    <p>ofrecemos alisados con formol</p>
-    <img src="assets/img/liso.jpg" alt="alisado">
+
+<!-- 3. SERVICIOS -->
+<section class="services-intro" id="servicios">
+  <p class="eyebrow center">Nuestros servicios</p>
+  <h2 class="reveal-title" data-arch>Belleza con técnica</h2>
+  <p class="lead">Cada tratamiento se piensa a medida: tu tipo de cabello, la forma de tu mirada, el diseño de tus cejas. Trabajamos con productos de calidad y resultados duraderos.</p>
 </section>
+
+<section class="service" id="alisados">
+  <div class="service-media">
+    <img src="assets/img/liso.jpg" alt="Alisado de cabello" loading="lazy">
+  </div>
+  <div class="service-text">
+    <span class="service-num">Alisados</span>
+    <h3 class="reveal-title" data-arch>Liso, brillante y manejable</h3>
+    <p>Alisado con keratina y formol, pensado para cada tipo de cabello. Resultados prolijos que duran meses, sin perder el movimiento natural.</p>
+  </div>
+</section>
+
+<section class="service reverse" id="pestanas">
+  <div class="service-media">
+    <img src="assets/img/pestañas.jpg" alt="Extensiones de pestañas" loading="lazy">
+  </div>
+  <div class="service-text">
+    <span class="service-num">Pestañas</span>
+    <h3 class="reveal-title" data-arch>Una mirada más intensa</h3>
+    <p>Extensiones pelo a pelo o volumen ruso, aplicadas una a una para un efecto natural o más dramático, según lo que busques.</p>
+  </div>
+</section>
+
+<section class="service" id="cejas">
+  <div class="service-media">
+    <img src="assets/img/cejas.jpg" alt="Diseño de cejas" loading="lazy">
+  </div>
+  <div class="service-text">
+    <span class="service-num">Cejas</span>
+    <h3 class="reveal-title" data-arch>Un marco para tu rostro</h3>
+    <p>Diseño, laminado y depilación de cejas, respetando tu forma natural para lograr un arco prolijo y armonioso.</p>
+  </div>
+</section>
+
+<!-- 4. CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="contacto-arc" aria-hidden="true">
+    <svg viewBox="0 0 800 200" preserveAspectRatio="xMidYMax slice">
+      <path d="M0 200 C 200 20, 600 20, 800 200"/>
+    </svg>
+  </div>
+  <p class="eyebrow center light">Reservá tu turno</p>
+  <h2 class="reveal-title" data-arch data-light>Coordinemos tu cita</h2>
+  <p class="lead light">Escribinos por WhatsApp y te confirmamos el horario que mejor te quede.</p>
+  <a href="https://wa.me/549291XXXXXXX" target="_blank" class="btn btn-whatsapp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36c1.46.8 3.1 1.22 4.84 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.86 14.24c-.25.7-1.45 1.33-2 1.42-.51.08-1.15.11-1.86-.12-.43-.14-.98-.32-1.68-.62-2.96-1.28-4.89-4.25-5.04-4.45-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.51.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.08.13.08.73-.17 1.43z"/></svg>
+    Escribir por WhatsApp
+  </a>
+
+  <div class="calendar-box">
+    <p class="calendar-label">Calendario de turnos</p>
+    <p class="calendar-hint"><!-- ACÁ PEGÁS EL IFRAME DE TIDYCAL O CALENDLY --></p>
+  </div>
+</section>
+
+<footer>
+  <img src="assets/img/logo.png" alt="Estética Ilia" class="footer-logo">
+  <p>© 2026 Estética Ilia — Bahía Blanca</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
